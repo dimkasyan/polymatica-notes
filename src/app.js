@@ -1,6 +1,5 @@
 import { templateJSengine } from './templateJSengine';
 import { layoutRowsNote } from './layoutRowsNote';
-// import './styles/style.css'
 
 const popup = document.querySelector('.popup__overlay');
 const addBtnPopup = document.querySelector('.add-btn');
