@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Notes App</title>
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <div class="app">
+        <div class="months">
+            <p>Choose month: </p>
+            <div class="months-list">
+                <div data-month="Jun" class="month-box">Jun</div>
+                <div data-month="Jul" class="month-box">Jul</div>
+                <div data-month="Aug" class="month-box">Aug</div>
+                <div data-month="Sep" class="month-box">Sep</div>
+                <div data-month="Oct" class="month-box">Oct</div>
+                <div data-month="Nov" class="month-box">Nov</div>
+                <div data-month="Dec" class="month-box">Dec</div>
+                <div data-month="Jan" class="month-box">Jan</div>
+                <div data-month="Feb" class="month-box">Feb</div>
+                <div data-month="Mar" class="month-box">Mar</div>
+                <div data-month="Apr" class="month-box">Apr</div>
+                <div data-month="May" class="month-box">May</div>
+            </div>
+        </div>
+        <div class="action-group">
+            <div class="note-caption"><p>Note list: </p></div>
+            <div class="action-container">
+                <button class="add-btn">ADD</button>
+                <button class="delete-btn">DELETE</button>
+            </div>
+        </div>
+        <div class="notes-list">
+            <div class="notes-header">
+                <div class="note-caption-data-time">Date & time</div>
+                <div class="note-caption-title">Title</div>
+                <div class="note-caption-note">Note</div>
+            </div>
+            <div class="notes-content"></div>
+            <div class="pagination-content">
+                <ul class="pagination" id='pagination'></ul>
+                <div class="next-steps">
+                    <div class="next-step"> > </div>
+                    <div class="end-step"> >> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup__overlay hidden">
+        <div class="form-add-note">
+            <div class="close"></div>
+            <div class="date">
+                <p>Date & time:</p>
+                <input class="form-input" id="date" name="date" type="datetime-local">
+            </div>
+            <div class="title">
+                <p>Title:</p>
+                <input class="form-input" id='title' name="title" type="text">
+            </div>
+            <div class="note">
+                <p>Note:</p>
+                <input class="form-input" id='note' name="note" type="text">
+            </div>
+            <button class="add-note">ADD NOTE</button>
+        </div>
+      </div>
+</body>
+
+</html>
